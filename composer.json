@@ -1,0 +1,331 @@
+{
+    "name": "drupal/recommended-project",
+    "description": "Project template for Drupal 8 projects with a relocated document root",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+		{
+        "type": "package",
+        "package": {
+            "name": "ckeditor/tabletoolstoolbar",
+            "version": "0.0.1",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://download.ckeditor.com/tabletoolstoolbar/releases/tabletoolstoolbar_0.0.1.zip",
+                "type": "zip"
+            }
+        }
+		},
+	{
+      "type": "package",
+      "package": {
+        "name": "ckeditor/find",
+        "version": "4.8.0",
+        "type": "ckeditor-plugin-library",
+        "extra": {
+          "installer-name": "find"
+        },
+        "dist": {
+          "url": "https://download.ckeditor.com/find/releases/find_4.8.0.zip",
+          "type": "zip"
+        }
+      }
+    },
+	{
+            "type": "package",
+            "package": {
+                "name": "ckeditor/letterspacing",
+                "type": "drupal-library",
+                "version": "0.1.2",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://download.ckeditor.com/letterspacing/releases/letterspacing_0.1.2.zip",
+                    "reference": "master"
+                }
+            }
+        },
+	{
+        "type": "package",
+        "package": {
+            "name": "ckeditor/tableresize",
+            "version": "4.7.2",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://download.ckeditor.com/tableresize/releases/tableresize_4.7.2.zip",
+                "type": "zip"
+            }
+        }
+    },
+	{
+        "type": "package",
+        "package": {
+            "name": "ckeditor/tableselection",
+            "version": "4.7.2",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://download.ckeditor.com/tableselection/releases/tableselection_4.7.2.zip",
+                "type": "zip"
+            }
+        }
+    },
+	{
+        "type": "package",
+        "package": {
+            "name": "ckeditor/contents",
+            "version": "0.11",
+            "type": "drupal-library",
+            "extra": {
+               "installer-name": "contents"
+            },
+            "dist": {
+               "url": "https://download.ckeditor.com/contents/releases/contents_0.11.zip",
+               "type": "zip"
+            }
+        }
+    },
+		{
+        "type": "package",
+        "package": {
+            "name": "ckeditor/table",
+            "version": "4.11.4",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://download.ckeditor.com/table/releases/table_4.11.4.zip",
+                "type": "zip"
+            }
+        }
+    },
+		{
+        "type": "package",
+        "package": {
+            "name": "ckeditor/quicktable",
+            "version": "1.0.6",
+            "type": "drupal-library",
+            "dist": {
+                "url": "https://download.ckeditor.com/quicktable/releases/quicktable_1.0.6.zip",
+                "type": "zip"
+            }
+        }
+    },
+			{
+      "type": "package",
+      "package": {
+        "name": "ckeditor/notification",
+        "version": "4.11.4",
+        "type": "ckeditor-plugin-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/notification/releases/notification_4.11.4.zip",
+          "type": "zip"
+        }
+      }
+    },
+	{
+      "type": "package",
+      "package": {
+        "name": "ckeditor/wordcount",
+        "version": "1.17.6",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/wordcount/releases/wordcount_1.17.6.zip",
+          "type": "zip"
+        }
+      }
+    },
+		{
+      "type": "package",
+      "package": {
+        "name": "jquery-validation/jquery-validation",
+        "version": "1.15.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/jquery-validation/jquery-validation",
+          "type": "zip",
+		  "reference": "1.15.0"
+        }
+      }
+    }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/address": "^1.7",
+        "drupal/addtoany": "^1.12",
+        "drupal/admin_toolbar": "^2.0",
+        "drupal/advagg": "^4.0",
+        "drupal/anonymizer": "^2.0@alpha",
+        "drupal/auto_index": "^1.0",
+        "drupal/autologout": "^1.0",
+        "drupal/autosave_form": "^1.1",
+        "drupal/big_pipe_sessionless": "^1.2",
+        "drupal/blazy": "^2.0@RC",
+        "drupal/block_visibility_groups": "^1.3",
+        "drupal/builder_notes": "^1.1",
+        "drupal/captcha": "^1.0",
+        "drupal/checklistapi": "^1.10",
+        "drupal/ckeditor_accordion": "^1.2",
+        "drupal/ckeditor_balloonpanel": "^1.1",
+        "drupal/ckeditor_bgimage": "^1.1",
+        "drupal/ckeditor_contents": "^1.2",
+        "drupal/ckeditor_datetime": "^1.0@alpha",
+        "drupal/ckeditor_emojione": "^1.3",
+        "drupal/ckeditor_find": "^1.0@beta",
+        "drupal/ckeditor_font": "^1.0",
+        "drupal/ckeditor_ls": "^1.0",
+        "drupal/ckeditor_media_embed": "^1.7",
+        "drupal/ckeditor_quicktable": "^1.0",
+        "drupal/ckeditor_quote": "^1.0@alpha",
+        "drupal/ckeditor_tableresize": "^1.0",
+        "drupal/ckeditor_tabletoolstoolbar": "^1.0",
+        "drupal/ckeditor_templates": "^1.1",
+        "drupal/ckeditor_templates_ui": "^1.2",
+        "drupal/cloudflare": "^1.0@alpha",
+        "drupal/colorbutton": "^1.1",
+        "drupal/colordialog": "^1.2",
+        "drupal/composer_security_checker": "^1.3",
+        "drupal/concurrent_edit_notify": "^1.0@alpha",
+        "drupal/conditional_fields": "^1.0@alpha",
+        "drupal/config_auto_export": "^1.0",
+        "drupal/config_delete": "^1.16",
+        "drupal/config_distro": "^1.0@alpha",
+        "drupal/config_filter": "^1.5",
+        "drupal/config_ignore": "^2.2",
+        "drupal/config_inspector": "^1.0",
+        "drupal/config_override_warn": "^1.3",
+        "drupal/config_overview": "1.x-dev",
+        "drupal/config_pr": "^1.0@alpha",
+        "drupal/config_split": "^1.4",
+        "drupal/config_update": "^1.7",
+        "drupal/config_update_ui": "^1.7",
+        "drupal/console": "^1.0.2",
+        "drupal/contact_storage": "^1.0",
+        "drupal/content_sync": "^2.1",
+        "drupal/core": "^8.8.0",
+        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/createandcontinue": "^1.2",
+        "drupal/crop": "^2.0",
+        "drupal/cryptolog": "^1.5",
+        "drupal/csp": "^1.10",
+        "drupal/ctools": "^3.4",
+        "drupal/custom_search": "^1.0@beta",
+        "drupal/delete_all": "^1.2",
+        "drupal/devel": "^2.1",
+        "drupal/diff": "^1.0",
+        "drupal/dynamic_entity_reference": "^1.8",
+        "drupal/easy_breadcrumb": "^1.12",
+        "drupal/easy_install": "^10.2",
+        "drupal/editor_advanced_link": "^1.6",
+        "drupal/encrypt": "^3.0@RC",
+        "drupal/entity_browser": "^2.4",
+        "drupal/entity_browser_entity_form": "^2.4",
+        "drupal/entity_clone": "^1.0@beta",
+        "drupal/entity_embed": "^1.0",
+        "drupal/entity_reference_revisions": "^1.7",
+        "drupal/environment_indicator": "^3.7",
+        "drupal/eu_cookie_compliance": "^1.8",
+        "drupal/extlink": "^1.2",
+        "drupal/finteza_analytics": "^1.3",
+        "drupal/fullcalendar_library": "^1.0@beta",
+        "drupal/gdpr": "^2.0@alpha",
+        "drupal/hreflang": "^1.3",
+        "drupal/image_effects": "^3.0",
+        "drupal/image_widget_crop": "^2.2",
+        "drupal/ip_anon": "^1.7",
+        "drupal/leaflet": "^1.25",
+        "drupal/linkit": "^4.3",
+        "drupal/login_security": "^1.5",
+        "drupal/mask_user_data": "^1.0@alpha",
+        "drupal/masked_input": "^1.1",
+        "drupal/media_entity_file_replace": "^1.0@beta",
+        "drupal/module_filter": "^3.1",
+        "drupal/notification": "^1.0",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/panelbutton": "^1.2",
+        "drupal/password_policy": "^3.0@alpha",
+        "drupal/pathauto": "^1.6",
+        "drupal/production_checklist": "^1.0@alpha",
+        "drupal/pwned_passwords": "^1.0",
+        "drupal/quicklink": "^1.2",
+        "drupal/rdf_builder": "^1.0@beta",
+        "drupal/recaptcha": "^2.5",
+        "drupal/redirect": "^1.5",
+        "drupal/remove_http_headers": "^1.0@beta",
+        "drupal/scheduler": "^1.1",
+        "drupal/search404": "^1.0",
+        "drupal/seckit": "^1.2",
+        "drupal/seo_checklist": "^4.1",
+        "drupal/simple_sitemap": "^3.5",
+        "drupal/simple_sitemap_views": "^1.0@alpha",
+        "drupal/sitemap": "^1.5",
+        "drupal/spamspan": "^1.1",
+        "drupal/stop_broken_link_in_body": "^1.0",
+        "drupal/svg_image": "^1.13",
+        "drupal/taxonomy_manager": "^1.0@alpha",
+        "drupal/taxonomy_unique": "^2.2",
+        "drupal/unique_entity_title": "^1.2",
+        "drupal/views_slideshow": "^4.6",
+        "drupal/w3c_validator": "^1.3",
+        "drupal/yoast_seo": "^1.5",
+        "drush/drush": "9.7.2",
+        "vlucas/phpdotenv": "^4.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^8.8"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+		"installer-types": ["ckeditor-plugin-library"],
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/libraries/ckeditor/plugins/{$name}": ["type:ckeditor-plugin-library"]
+        },
+        "drupal-core-project-message": {
+            "include-keys": ["homepage", "support"],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+
+                "  * Install the site: https://www.drupal.org/docs/8/install",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}

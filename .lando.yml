@@ -1,0 +1,16 @@
+name: base
+recipe: drupal8
+config:
+  php: '7.3'
+  via: nginx
+  webroot: web
+  xdebug: true
+services:
+  appserver:
+    run:
+      - composer install
+  adminer:
+    type: phpmyadmin
+    hosts:
+      - database
+
