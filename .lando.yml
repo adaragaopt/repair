@@ -1,8 +1,10 @@
 name: repair
 recipe: drupal8
 config:
+  database: mariadb
   php: '7.3'
-  via: nginx
+  via: apache
+#  via: nginx
   webroot: web
   xdebug: true
 services:
